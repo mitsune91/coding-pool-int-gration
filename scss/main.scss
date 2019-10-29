@@ -1,0 +1,71 @@
+@import "variable";
+
+.main-submenu {
+  margin-top: 5rem;
+
+  .submenu-news {
+
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      margin: 0 2rem;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Roboto', serif;
+        font-weight: 700;
+        font-size: 0.75em;
+        padding-top: 3.75em;
+        width: 6em;
+        height: 6em;
+        text-align: center;
+        border-radius: 6em;
+      }
+    }
+
+    a:hover {
+      background-color: white !important;
+    }
+
+    a.musique {
+      background: url("../public/images/musique.png") no-repeat 50% 25%;
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+
+    a.cinema {
+      background: url("../public/images/film.png") no-repeat 50% 25%;
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+  ;
+
+    a.livre {
+      background: url("../public/images/livre.png") no-repeat 50% 25%;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    a.presse {
+      background: url("../public/images/presse.png") no-repeat 50% 25%;
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+
+    a.autoformation {
+      background: url("../public/images/autoformation.png") no-repeat 50% 25%;
+
+    }
+
+    a.patrimoine {
+      background: url("../public/images/patrimoine.png") no-repeat top;
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+
+  }
+
+}

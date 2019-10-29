@@ -1,0 +1,68 @@
+(function ($) {
+  Drupal.behaviors.bmgGrid = {
+    attach: function (context, settings) {
+      // Using once() to apply the myCustomBehaviour effect when you want to do just run one function.
+      $(context).find('.grid-container .grid-content').once('bmgGrid').each(function(){
+        displayGrid('all', settings);
+        $('.grid-container .filters a').click(function(e){
+          $('.grid-container .filters a').each(function(){
+            $(this).attr('title', $(this).attr('data-title'));
+          });
+          if($(this).hasClass('active')){
+            $('.grid-container .filters a').removeClass('active');
+            displayGrid('all', settings);
+          }
+          else{
+            $('.grid-container .filters a').removeClass('active');
+            $(this).addClass('active');
+            $(this).attr('title', 'Désactiver le filter');
+            displayGrid($(this).attr('data-spec'), settings);
+          }
+          e.preventDefault();
+          return false;
+        });
+      });
+    }
+  };
+
+  function displayGrid(type, settings){
+    $('.grid-container .grid-content').addClass("loading");
+    $('.grid-container .grid-content').html("Chargement de la grille en cours...");
+    $.ajax({
+      url: settings.path.baseUrl + "bmg/grid-generator/" + type,
+      success: function(html){
+        $('.grid-container .grid-content').removeClass("loading");
+        $('.grid-container .grid-content').html(html);
+        $('.grid-container .bmg-home-grid').addClass('loading');
+        $('.grid-container .grid-content .grid-item img').addClass('loading');
+        var total = $('.grid-container .grid-content .grid-item img.loading').length;
+        $('.grid-container .grid-content').append('<div class="loading-status"></div>');
+        $('.grid-container .grid-content .loading-status').html("Chargement des images en cours : 0%");
+        $('.grid-container .grid-content .loading-status').css('left', ($('.grid-container .grid-content').outerWidth() - $('.grid-container .grid-content .loading-status').outerWidth()) / 2)
+        $('.grid-container .grid-content .grid-item img').each(function(){
+          if($(this).attr('src') == ''){
+            $(this).parents('.grid-item').detach();
+          }
+        });
+        $('.grid-container .grid-content .grid-item img').on('load', function(){
+          $(this).removeClass("loading");
+          var percent = Math.round(100 - $('.grid-container .grid-content .grid-item img.loading').length / total * 100);
+          $('.grid-container .grid-content .loading-status').html("Chargement des images en cours : " + percent + "%");
+          if(percent == 100){
+            $('.grid-container .bmg-home-grid').removeClass('loading');
+            $('.grid-container .grid-content .loading-status').detach();
+          }
+        });
+        var time = 0;
+        window.setInterval(function(){
+          time += 500;
+          if(time >= 6000){
+            $('.grid-container .bmg-home-grid').removeClass('loading');
+            $('.grid-container .grid-content .loading-status').detach();
+          }
+        }, 500);
+      }
+    });
+  }
+
+})(jQuery);

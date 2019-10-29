@@ -1,0 +1,84 @@
+.bg-black {
+  background-color: black;
+}
+
+.font-yellow {
+  color: yellow;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.main {
+  max-width: 82%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-color: #e7e7e7e7;
+  font-size: 1.6rem;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 8rem 0 0;
+}
+
+footer {
+  padding-top: 2rem;
+}
+footer .footer-content {
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+footer .footer-content ul {
+  padding: 0;
+}
+footer .footer-content li {
+  list-style: none;
+  padding-top: 1rem;
+}
+footer .footer-content a {
+  text-decoration: none;
+  color: yellow;
+  font-family: "Roboto", serif;
+  font-size: 1.2rem;
+}
+footer .footer-content .fab {
+  margin: 0.7rem;
+  color: white;
+}
+footer .footer-content .mr10 {
+  margin: 0 9rem 0;
+}
+
+/*# sourceMappingURL=footer.css.map */

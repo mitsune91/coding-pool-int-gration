@@ -1,0 +1,62 @@
+$poiretOne: 'Poiret One', cursive;
+$colorBlack: black;
+$colorYellow: yellow;
+$mainBodyColor: #e7e7e7e7;
+$colorWhite: white;
+$colorRed: red;
+$colorBlue: aqua;
+//RE USABLE
+.bg-black {
+  background-color: $colorBlack;
+}
+
+.font-yellow {
+  color: $colorYellow;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.main {
+  max-width: 82%;
+  margin: 0 auto;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+//GENERAL
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-color: $mainBodyColor;
+  font-size: 1.6rem;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 8rem 0 0;
+}

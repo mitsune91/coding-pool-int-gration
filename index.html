@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script src="https://kit.fontawesome.com/358901112d.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <!-- script   -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/masonry.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Title</title>
+    <script>
+    </script>
+</head>
+<body>
+
+<header class="flex space-between main align-center fixed">
+
+    <!-- Menu collapse sidepanel-->
+    <div class="bar-menu">
+        <div class="container" id="container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div>Menu</div>
+        </div>
+    </div>
+    <!--    //MENU HIDDEN-->
+    <div id="menu" class="sidebar">
+        <ul>
+            <li><a class="title-menu" href="">ACCUEIL</a>
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="">Les nouveautés</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">Les plus consultés</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">Les coups de coeur des bibliothécaires</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">Les sélections des bibliothécaires</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">Aide</a></li>
+                </ul>
+            </li>
+            <li><a class="title-menu" href="">PLATEFORMES</a>
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="">Bibook - Livre</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">CinéVOD - Cinéma</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">diMusic - Musique</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">EuroPresse - Presse</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">LeKiosk - Presse</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">MyCow - Autoformation</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">Pagella - Patrimoine</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">Place Gre'Net - Presse</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="">ToutApprendre - Autoformation</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="header_title text-center">
+        <h1>La numothèque Grenoble-Alpes</h1>
+        <h2>BIBLIOTHEQUE NUMERIQUE DE LA METROPOLE GRENOBLE-ALPES</h2>
+    </div>
+    <div class="header-account">
+        <p>Rechercher
+            <input type="search" name="test" id="test"> <label for="test"><i class="fas fa-search"></i></label>
+            | <a href="#">MON COMPTE</a></p>
+    </div>
+</header>
+<main class="main">
+    <div class="main-submenu flex align-center justify-center ">
+        <div class="submenu-news">Les Nouveautées</div>
+        <ul class="list-style-none">
+            <li><a href="#" class="musique">Musique</a></li>
+            <li><a href="#" class="cinema">Cinéma</a></li>
+            <li><a href="#" class="livre">Livre</a></li>
+            <li><a href="#" class="presse">Presse</a></li>
+            <li><a href="#" class="autoformation">Autoformation</a></li>
+            <li><a href="#" class="patrimoine">Patrimoine</a></li>
+        </ul>
+    </div>
+    <div class="masonry-container flex space-between">
+
+        <div class=" flex-item">
+            <img src="public/images/Calque 104.png" alt=""/>
+            <img src="public/images/Calque 106.png" alt=""/>
+            <img src="public/images/Calque 100.png" alt=""/>
+            <img src="public/images/Calque 70.png" alt=""/>
+        </div>
+        <div class=" flex-item">
+            <img src="public/images/image1.jpg" alt=""/>
+            <img src="public/images/image2.jpg" alt=""/>
+            <img src="public/images/image3.jpg" alt=""/>
+            <img src="public/images/image4.jpg" alt=""/>
+        </div>
+        <div class="flex-item">
+            <img src="public/images/image5.jpeg" alt=""/>
+            <img src="public/images/image6.jpeg" alt=""/>
+            <img src="public/images/image7.jpeg" alt=""/>
+            <img src="public/images/image8.jpg" alt=""/>
+        </div>
+        <div class="flex-item"
+        ><img src="public/images/image9.jpg" alt=""/>
+            <img src="public/images/image10.jpg" alt=""/>
+            <img src="public/images/image11.jpg" alt=""/>
+            <img src="public/images/image12.png" alt=""/>
+        </div>
+    </div>
+</main>
+<footer class="bg-black">
+    <div class="flex font-yellow main  footer-content ">
+        <div class="logo">
+            <img src="public/images/footer.png" alt="logo">
+        </div>
+        <div class="mr10">
+            <ul>
+                <li><a href="#">MODE D'EMPLOI</a></li>
+                <li><a href="#">FAQ - ETAT DES SERVICES</a></li>
+                <li><a href="#">ACCESSIBILITE</a></li>
+            </ul>
+        </div>
+        <div class="mr10">
+            <ul>
+                <li><a href="#">LA NUMOTHEQUE C'EST QUOI ?</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">MENTIONS LEGALES</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>SUIVEZ NOUS <span><i class="fab fa-facebook-f"></i></span><span><i
+                    class="fab fa-instagram"></i></span><span><i class="fab fa-twitter"></i></span></p>
+        </div>
+    </div>
+
+</footer>
+
+<script src="js/js.js"></script>
+</body>
+</html>

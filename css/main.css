@@ -1,0 +1,106 @@
+.bg-black {
+  background-color: black;
+}
+
+.font-yellow {
+  color: yellow;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.main {
+  max-width: 82%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-color: #e7e7e7e7;
+  font-size: 1.6rem;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 8rem 0 0;
+}
+
+.main-submenu {
+  margin-top: 5rem;
+}
+.main-submenu ul li {
+  display: inline-block;
+  margin: 0 2rem;
+}
+.main-submenu ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-size: 0.75em;
+  padding-top: 3.75em;
+  width: 6em;
+  height: 6em;
+  text-align: center;
+  border-radius: 6em;
+}
+.main-submenu ul a:hover {
+  background-color: white !important;
+}
+.main-submenu ul a.musique {
+  background: url("../public/images/musique.png") no-repeat 50% 25%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.main-submenu ul a.cinema {
+  background: url("../public/images/film.png") no-repeat 50% 25%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.main-submenu ul a.livre {
+  background: url("../public/images/livre.png") no-repeat 50% 25%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.main-submenu ul a.presse {
+  background: url("../public/images/presse.png") no-repeat 50% 25%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.main-submenu ul a.autoformation {
+  background: url("../public/images/autoformation.png") no-repeat 50% 25%;
+}
+.main-submenu ul a.patrimoine {
+  background: url("../public/images/patrimoine.png") no-repeat top;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
