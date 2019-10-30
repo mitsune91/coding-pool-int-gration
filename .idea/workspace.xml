@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33d89f7a-7724-491f-a390-57d8605801c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/footer.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/masonry.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/masonry.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/masonry.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/masonry.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/masonry.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/masonry.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/variable.scss" afterDir="false" />
     </list>
@@ -82,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572261596581</updated>
       <workItem from="1572261597806" duration="2868000" />
-      <workItem from="1572269048792" duration="43834000" />
+      <workItem from="1572269048792" duration="47845000" />
     </task>
     <servers />
   </component>

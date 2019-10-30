@@ -1,3 +1,67 @@
+@charset "UTF-8";
+.bg-black {
+  background-color: black;
+}
+
+.font-yellow {
+  color: yellow;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.main {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-color: #e7e7e7e7;
+  font-size: 1.6rem;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 8rem 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding-top: 15rem;
+  }
+
+  .main {
+    max-width: 95%;
+  }
+}
 .masonry-container {
   flex-wrap: nowrap;
   align-content: flex-start;
@@ -17,14 +81,42 @@
   width: 37%;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 680px) {
-  .masonry-container {
-    flex-wrap: wrap;
-  }
-  .masonry-container .flex-item {
-    width: 49%;
-  }
+/*
+when .item:hover, show overlay.
+overwrite .item-overlay."position"
+*/
+.image-container:hover .item-overlay {
+  top: 70%;
 }
+
+/*
+by default, overlay is visible…
+*/
+.item-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 3%;
+  left: 0;
+  background: dodgerBlue;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  -moz-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+  -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+  transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+}
+
+.item-overlay {
+  top: 100%;
+}
+
+.image-container {
+  position: relative;
+  margin: 2%;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 680px) {
   .masonry-container {
     flex-wrap: wrap;
