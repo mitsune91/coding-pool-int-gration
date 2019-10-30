@@ -2,15 +2,21 @@
 
 .main-submenu {
   margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
 
   .submenu-news {
 
   }
 
   ul {
+    display: flex;
+padding: 0;
+
     li {
-      display: inline-block;
-      margin: 0 2rem;
+      list-style: none;
+
+      margin-left: 2rem;
 
       a {
         text-decoration: none;
@@ -69,3 +75,22 @@
   }
 
 }
+
+
+@media screen and (max-width: 680px) {
+  .main-submenu{display: flex}
+  .submenu-news {
+padding-bottom: 4rem;
+    ul {
+      margin-top: 5rem;
+      flex-wrap: wrap;
+
+      li {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+

@@ -23,7 +23,7 @@
 }
 
 .main {
-  max-width: 82%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -52,12 +52,27 @@ body {
   padding: 8rem 0 0;
 }
 
+@media screen and (max-width: 1024px) {
+  body {
+    padding-top: 15rem;
+  }
+
+  .main {
+    max-width: 95%;
+  }
+}
 .main-submenu {
   margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-submenu ul {
+  display: flex;
+  padding: 0;
 }
 .main-submenu ul li {
-  display: inline-block;
-  margin: 0 2rem;
+  list-style: none;
+  margin-left: 2rem;
 }
 .main-submenu ul li a {
   text-decoration: none;
@@ -101,6 +116,23 @@ body {
   background: url("../public/images/patrimoine.png") no-repeat top;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 680px) {
+  .main-submenu {
+    display: flex;
+  }
+
+  .submenu-news {
+    padding-bottom: 4rem;
+  }
+  .submenu-news ul {
+    margin-top: 5rem;
+    flex-wrap: wrap;
+  }
+  .submenu-news ul li {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

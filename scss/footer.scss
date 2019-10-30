@@ -1,15 +1,17 @@
 @import "variable";
 
 footer {
-padding-top: 2rem;
+  padding-top: 2rem;
+
   .footer-content {
     align-items: flex-start;
     font-weight: bold;
     font-size: 1.2rem;
 
-    ul{
+    ul {
       padding: 0;
     }
+
     li {
       list-style: none;
       padding-top: 1rem;
@@ -21,12 +23,31 @@ padding-top: 2rem;
       font-family: 'Roboto', serif;
       font-size: 1.2rem;
     }
-    .fab{
+
+    .fab {
       margin: .7rem;
       color: $colorWhite;
     }
-    .mr10{
-      margin:  0  9rem  0;
+
+    .mr10 {
+      margin: 0 9rem 0;
     }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer-content {
+    flex-wrap: wrap;
+
+
+  }
+  .mr10{
+    padding-left: 4rem;
+  }
+  .followUs {
+    padding-left: 13rem;
+  }
+  .logo{
+    margin: auto;
   }
 }

@@ -17,4 +17,21 @@
   width: 37%;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 680px) {
+  .masonry-container {
+    flex-wrap: wrap;
+  }
+  .masonry-container .flex-item {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .masonry-container {
+    flex-wrap: wrap;
+  }
+  .masonry-container .flex-item {
+    width: 98%;
+  }
+}
+
 /*# sourceMappingURL=masonry.css.map */

@@ -23,7 +23,7 @@
 }
 
 .main {
-  max-width: 82%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -52,6 +52,15 @@ body {
   padding: 8rem 0 0;
 }
 
+@media screen and (max-width: 1024px) {
+  body {
+    padding-top: 15rem;
+  }
+
+  .main {
+    max-width: 95%;
+  }
+}
 footer {
   padding-top: 2rem;
 }
@@ -79,6 +88,24 @@ footer .footer-content .fab {
 }
 footer .footer-content .mr10 {
   margin: 0 9rem 0;
+}
+
+@media screen and (max-width: 680px) {
+  .footer-content {
+    flex-wrap: wrap;
+  }
+
+  .mr10 {
+    padding-left: 4rem;
+  }
+
+  .followUs {
+    padding-left: 13rem;
+  }
+
+  .logo {
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

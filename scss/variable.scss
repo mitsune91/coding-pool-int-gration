@@ -31,7 +31,7 @@ $colorBlue: aqua;
 }
 
 .main {
-  max-width: 82%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -59,4 +59,12 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: 8rem 0 0;
+}
+@media screen and (max-width: 1024px) {
+  body{
+    padding-top: 15rem;
+  }
+  .main{
+    max-width: 95%;
+  }
 }

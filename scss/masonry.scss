@@ -1,5 +1,4 @@
 
-
 .masonry-container {
   flex-wrap: nowrap;
   align-content: flex-start;
@@ -10,11 +9,34 @@
     flex-direction: column;
     width: 20%;
   }
+
   img {
     width: 100%;
     margin: .4em 0;
   }
 }
+
 .flex-item:nth-child(2) {
   width: 37%;
 }
+
+@media screen and (max-width: 1024px) and (min-width:680px ){
+  .masonry-container {
+    flex-wrap: wrap;
+
+    .flex-item {
+      width: 49%;
+    }
+  }
+}@media screen and (max-width: 680px){
+  .masonry-container {
+    flex-wrap: wrap;
+
+    .flex-item {
+      width: 98%;
+    }
+  }
+}
+
+
+
